@@ -614,7 +614,7 @@ static HHPanningTableViewCellDirection HHOppositeDirection(HHPanningTableViewCel
 			continue;
 		}
 
-		[containerView insertSubview:subview atIndex:0];
+		[containerView sendSubviewToBack:subview];
 	}
 
 	[drawerView setFrame:[cellView bounds]];
